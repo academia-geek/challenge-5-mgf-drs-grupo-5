@@ -9,51 +9,37 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style> -->
 </head>
 
 <body>
-  <header id="header">
-    <nav>
-      <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo.svg" width="100%" height="30" alt="" loading="lazy">
-        </a>
-        <button type="button" class="btn btn-white" data-toggle="button" aria-pressed="false">
-          Try It Free
-        </button>
-      </nav>
-    </nav>
-    <div class="row m-3">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
-        <h1> Build The Community Your Fans Will Love</h1>
-        <p> re-imagines the way we build communities. You have a voice, but so does your audience.
-          Create connections with your users as you engage in genuine discussion. </p>
-        <button type="button" class="btn btn-lg btn-danger" disabled>Primary button</button>
+  <header id="header" class="container-fluid pb-5">    
+    <nav class="navbar navbar-light p-4 mb-5 d-flex align-items-center">
+      <div class="navbar-brand navbar-img">
+        <img src="images/logo.svg" class="img-fluid logo" alt="Responsive image" loading="lazy">
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+      <button type="button" id="navbar-button" class="navbar-button btn btn-white shadow bg-white rounded-pill font-weight-bold" data-toggle="button" aria-pressed="false">
+        Try It Free
+      </button>
+    </nav> 
+    <div class="row m-3">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5 py-3 px-5 text-lg-left text-center text-wrap">
+        <h1> Build The Community Your Fans Will Love</h1>
+        <p class="my-4"> re-imagines the way we build communities. You have a voice, but so does your audience.
+          Create connections with your users as you engage in genuine discussion. </p>
+        <button type="button" class="header-button btn btn-lg rounded-pill font-weight-bold" disabled>Get Started For Free</button>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6">
         <img src="images/illustration-mockups.svg" alt="mockups" class="img-fluid" alt="Responsive image">
       </div>
     </div>
   </header>
   <main class="d-flex flex-column align-items-center justify-content-center">
     <section class="w-75 shadow-lg p-3 mb-5 bg-white rounded m-5">
-      <div class="m-5 d-flex flex-md-row flex-sm-column-reverse flex-column-reverse">
-        <div class="mt-5">
+      <div class="m-5 d-flex flex-sm-column-reverse flex-md-row flex-column-reverse">
+        <div class="mt-5 text-center text-md-left">
           <h2>Grow Together</h2>
           <p> Generate meaningful discussions with your audience and build a strong, loyal community.
             Think of the insightful conversations you miss out on with a feedback form.</p>
@@ -65,12 +51,12 @@
       </div>
     </section>
     <section class="w-75 shadow-lg p-3 mb-5 bg-white rounded m-5">
-      <div class="row m-5 ">
-        <div class="col col-sm-12 col-md-6 col-6">
-          <img src="images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation" width="100%"
-            class="img-fluid" alt="Responsive image">
+      <div class="m-5 d-flex flex-column flex-sm-column flex-md-row">
+        <div class="">
+          <img src="images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation" 
+               width="100%" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col col-sm-12 col-md-6 col-6 mt-5">
+        <div class="mt-5 text-center text-md-left">
           <h2> Flowing Conversations</h2>
           <p> You wouldn't paginate a conversation in real life, so why do it online? Our threads
             have just-in-time loading for a more natural flow.
@@ -79,13 +65,13 @@
       </div>
     </section>
     <section class="w-75 shadow-lg p-3 mb-5 bg-white rounded m-5 last-section">
-      <div class="m-5 d-flex flex-md-row flex-sm-column-reverse flex-column-reverse">
-        <div class="mt-5">
+      <div class="m-5 d-flex flex-sm-column-reverse flex-column-reverse flex-md-row">
+        <div class="mt-5 text-center text-md-left">
           <h2>Your Users</h2>
           <p> It takes no time at all to integrate Huddle with your app's authentication solution.
             This means, once signed in to your app, your users can start chatting immediately.</p>
         </div>
-        <div class="col col-sm-12 col-md-6 col-6">
+        <div class="">
           <img src="/images/illustration-your-users.svg" alt="illustration-your-users" width="100%" class="img-fluid"
             alt="Responsive image">
         </div>
@@ -94,7 +80,7 @@
     <div class="ready-container">
       <div class="ready-div d-flex align-items-center flex-column shadow p-3 mb-5 bg-white rounded w-100">
         <h3> Ready To Build Your Community?</h3>
-        <button type="button" class="btn btn-lg btn-danger" disabled>Primary button</button>
+        <button type="button" class="btn btn-lg btn-danger rounded-pill w-75 font-weight-bold" disabled>Primary button</button>
       </div>
     </div>
   </main>
