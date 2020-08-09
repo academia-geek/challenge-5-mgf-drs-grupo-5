@@ -17,9 +17,10 @@ header nav .navbar-button {
     font-size: 1.2em;
 }
 
-.header-button {
+.get-started-button {
     background-color: hsl(322, 100%, 66%);
     color: white;
+    cursor: pointer;
 }
 
 main {
@@ -63,9 +64,8 @@ main {
         font-size: 0.8em;
     }
 
-    header .header-button {
+    header .get-started-button {
         padding: 5px 15px;
         font-size: 0.9em;
     }
-
 }
