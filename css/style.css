@@ -5,15 +5,18 @@
     url("/images/bg-hero-desktop.svg");
 }
 
-/* .btn {
-    background-color: green;
-} */
+main {
+    padding-bottom: 10px;
+}
 
-/* .ready-div {
-    position: absolute;
-    left: calc(100vw/4);
-    top: 200vh;
-} */
+.last-section {
+    margin-bottom: 50px;
+}
+
+.ready-div {
+    position: relative;
+    top: 100px;
+}
 
 #footer {
     background-color: hsl(192, 100%, 9%);
